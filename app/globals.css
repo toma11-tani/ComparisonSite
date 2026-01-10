@@ -26,7 +26,7 @@ body {
 }
 
 .hero-section {
-  background-size: 50% auto;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
