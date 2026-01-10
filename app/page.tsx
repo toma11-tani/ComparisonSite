@@ -21,10 +21,12 @@ export default function Home() {
                             Kagoshima Employment Support
                         </p>
                         <h1 className="hero-title text-[1.7rem] md:text-[3rem] font-bold mt-6">
-                            鹿児島で、<br className="md:hidden" />
-                            自分らしく働くための
+                            <span className="inline-block whitespace-nowrap">
+                                鹿児島で、<br className="md:hidden" />
+                                自分らしく働くための
+                            </span>
                             <br />
-                            就労移行支援を選ぶ。
+                            <span className="inline-block">就労移行支援を選ぶ。</span>
                         </h1>
                     </div>
                     <div className="scroll-hint mt-16 w-full flex justify-center">
