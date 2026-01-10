@@ -18,15 +18,15 @@ export default function Home() {
                 <div className="w-full flex flex-col justify-center min-h-[32vh]">
                     <div className="text-left md:pl-[40%] md:w-[60%]">
                         <p className="text-xs font-semibold tracking-[0.2em] text-white uppercase">
-                            <span className="inline-block whitespace-nowrap">Kagoshima Employment Support</span>
+                            <span className="inline-block md:whitespace-nowrap">Kagoshima Employment Support</span>
                         </p>
-                        <h1 className="hero-title text-[1.7rem] md:text-[3rem] font-bold mt-6">
-                            <span className="inline-block whitespace-nowrap">
-                                鹿児島で、<br className="md:hidden" />
+                        <h1 className="hero-title text-[1.4rem] md:text-[3rem] font-bold mt-6">
+                            <span className="inline-block md:whitespace-nowrap">
+                                鹿児島で、
                                 自分らしく働くための
                             </span>
                             <br />
-                            <span className="inline-block whitespace-nowrap">就労移行支援を選ぶ。</span>
+                            <span className="inline-block md:whitespace-nowrap">就労移行支援を選ぶ。</span>
                         </h1>
                     </div>
                     <div className="scroll-hint mt-16 w-full flex justify-center">
