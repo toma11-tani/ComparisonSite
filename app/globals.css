@@ -26,13 +26,18 @@ body {
 }
 
 .hero-section {
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.hero-section-mobile {
+  background-image: var(--hero-image-mobile);
+  background-size: cover;
+}
+
 @media (min-width: 768px) {
-  .hero-section {
+  .hero-section-desktop {
+    background-image: var(--hero-image-desktop);
     background-size: 100% auto;
   }
 }

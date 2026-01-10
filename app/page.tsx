@@ -2,18 +2,24 @@ import React from 'react';
 import { RankingList } from '../components/RankingList';
 
 export default function Home() {
-    const heroImageUrl =
+    const heroImageUrlDesktop =
         process.env.NODE_ENV === 'production'
             ? '/ComparisonSite/assets/hero.jpg'
             : '/assets/hero.jpg';
 
+    const heroImageUrlMobile =
+        process.env.NODE_ENV === 'production'
+            ? '/ComparisonSite/assets/hero_media.jpg'
+            : '/assets/hero_media.jpg';
+
     return (
         <main className="min-h-screen bg-brand-surface pb-20">
             <section
-                className="hero-section text-white py-20 px-4"
+                className="hero-section hero-section-mobile md:hero-section-desktop text-white py-20 px-4"
                 style={{
-                    backgroundImage: `url(${heroImageUrl})`,
-                }}
+                    '--hero-image-mobile': `url(${heroImageUrlMobile})`,
+                    '--hero-image-desktop': `url(${heroImageUrlDesktop})`,
+                } as React.CSSProperties}
             >
                 <div className="w-full flex flex-col justify-center min-h-[32vh]">
                     <div className="text-left md:pl-[40%] md:w-[60%]">
@@ -21,12 +27,12 @@ export default function Home() {
                             <span className="inline-block md:whitespace-nowrap">Kagoshima Employment Support</span>
                         </p>
                         <h1 className="hero-title text-[1.4rem] md:text-[3rem] font-bold mt-6">
-                            <span className="inline-block md:whitespace-nowrap">
-                                鹿児島で、
+                            鹿児島で、<br className="md:hidden" />
+                            <span className="md:whitespace-nowrap">
                                 自分らしく働くための
                             </span>
                             <br />
-                            <span className="inline-block md:whitespace-nowrap">就労移行支援を選ぶ。</span>
+                            <span className="md:whitespace-nowrap">就労移行支援を選ぶ。</span>
                         </h1>
                     </div>
                     <div className="scroll-hint mt-16 w-full flex justify-center">
