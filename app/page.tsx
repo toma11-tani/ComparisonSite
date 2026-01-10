@@ -4,9 +4,9 @@ import { RankingList } from '../components/RankingList';
 export default function Home() {
     return (
         <main className="min-h-screen bg-brand-surface pb-20">
-            <section className="bg-[#b8eb72] text-[#333333] pt-32 pb-36 px-4">
+            <section className="hero-section text-white pt-32 pb-36 px-4">
                 <div className="max-w-4xl mx-auto flex flex-col items-center justify-center text-center min-h-[65vh]">
-                    <p className="text-xs font-semibold tracking-[0.2em] text-[#333333] uppercase">
+                    <p className="text-xs font-semibold tracking-[0.2em] text-white uppercase">
                         Kagoshima Employment Support
                     </p>
                     <h1 className="hero-title text-[1.7rem] md:text-[3rem] font-bold mt-6">

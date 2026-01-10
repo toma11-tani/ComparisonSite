@@ -22,7 +22,15 @@ body {
   font-weight: 700;
   line-height: 2.2;
   letter-spacing: 0.15em;
-  color: #4a4a4a;
+  color: #ffffff;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(122, 163, 74, 0.9), rgba(122, 163, 74, 0.9)),
+    url('/assets/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .scroll-hint {
@@ -33,7 +41,7 @@ body {
   font-size: 0.75rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #4a4a4a;
+  color: #ffffff;
   animation: scroll-bob 1.8s ease-in-out infinite;
 }
 
