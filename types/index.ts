@@ -21,8 +21,3 @@ export interface Office {
     phone?: string;
   };
 }
-
-export interface FilterState {
-  area: Area | 'All';
-  skill: string | 'All';
-}

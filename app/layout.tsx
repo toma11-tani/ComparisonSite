@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Noto_Sans_JP } from 'next/font/google';
 import './globals.css';
 import { StickyFooter } from '../components/StickyFooter';
 
-const inter = Inter({ subsets: ['latin'] });
+const notoSans = Noto_Sans_JP({
+    subsets: ['latin'],
+    weight: ['400', '500', '700'],
+});
 
 export const metadata: Metadata = {
     title: '鹿児島・就労移行支援ナビ | あなたに最適な事業所が見つかる',
@@ -17,31 +20,36 @@ export default function RootLayout({
 }) {
     return (
         <html lang="ja">
-            <body className={inter.className}>
-                {/* Header: Clean & White */}
-                <header className="bg-fog-white border-b border-gray-200 sticky top-0 z-50">
-                    <div className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
-                        <div className="font-bold text-xl text-muted-teal tracking-wide">
+            <body className={notoSans.className}>
+                <header className="bg-brand-surface border-b border-black/5 sticky top-0 z-50">
+                    <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+                        <div className="font-bold text-lg md:text-xl text-brand-text tracking-wide">
                             鹿児島・就労移行支援ナビ
                         </div>
-                        {/* PC Menu */}
-                        <nav className="hidden md:flex gap-6 text-sm font-medium text-blue-black/70">
-                            <a href="#" className="hover:text-muted-teal transition-colors">ランキング</a>
-                            <a href="#" className="hover:text-muted-teal transition-colors">コラム</a>
-                            <a href="#" className="hover:text-muted-teal transition-colors">とは？</a>
-                        </nav>
+                        <div className="hidden md:flex items-center gap-6 text-sm font-medium text-brand-muted">
+                            <a href="#rankings" className="hover:text-brand-lime-strong transition-colors">事業所一覧</a>
+                            <a
+                                href="#contact"
+                                className="bg-brand-orange text-white px-4 py-2 rounded-md shadow-sm hover:opacity-90 transition-colors"
+                            >
+                                お問い合わせ
+                            </a>
+                        </div>
                     </div>
                 </header>
 
                 {children}
 
-                {/* Footer: Muted Teal Background */}
-                <footer className="bg-muted-teal text-white py-12 text-center text-sm">
-                    <div className="max-w-4xl mx-auto px-4">
-                        <p className="mb-4 text-white/90">
-                            掲載情報に関するお問い合わせは<a href="#" className="underline hover:text-deep-moss">こちら</a>から
+                <footer id="contact" className="bg-brand-surface-alt border-t border-black/5 py-12 text-center text-sm">
+                    <div className="max-w-5xl mx-auto px-4 text-brand-muted">
+                        <p className="mb-4">
+                            掲載情報に関するお問い合わせは
+                            <a href="#" className="text-brand-lime-strong font-medium underline underline-offset-4 hover:opacity-80">
+                                こちら
+                            </a>
+                            から
                         </p>
-                        <p className="text-white/70">&copy; 2024 Kagoshima Employment Support Navi. All rights reserved.</p>
+                        <p>&copy; 2024 Kagoshima Employment Support Navi. All rights reserved.</p>
                     </div>
                 </footer>
 

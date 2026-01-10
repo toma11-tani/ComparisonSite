@@ -1,34 +1,23 @@
-'use client';
-
-import React, { useState, useMemo } from 'react';
-import { Office, FilterState } from '../types';
+import React from 'react';
 import { offices } from '../data/offices';
 import { sortOffices } from '../utils/rankingEngine';
 import { OfficeCard } from './OfficeCard';
-import { SearchFilter } from './SearchFilter';
 
 export const RankingList: React.FC = () => {
-    const [filter, setFilter] = useState<FilterState>({
-        area: 'All',
-        skill: 'All',
-    });
-
-    // フィルター変更時に再計算（メモ化してパフォーマンス最適化）
-    const sortedOffices = useMemo(() => {
-        return sortOffices(offices, filter);
-    }, [filter]);
+    const sortedOffices = sortOffices(offices);
 
     return (
-        <div className="max-w-4xl mx-auto px-4 py-8">
-            <SearchFilter filter={filter} onFilterChange={setFilter} />
-
-            <div className="space-y-4">
-                <div className="flex justify-between items-end mb-4">
-                    <h2 className="text-2xl font-bold text-gray-800">
-                        おすすめ事業所ランキング
-                    </h2>
-                    <span className="text-gray-500 text-sm">
-                        {sortedOffices.length}件 ヒット
+        <section id="rankings" className="max-w-5xl mx-auto px-4 py-10">
+            <div className="space-y-5">
+                <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-2">
+                    <div>
+                        <p className="text-sm text-brand-muted">事業所一覧</p>
+                        <h2 className="text-2xl font-bold text-brand-text">
+                            おすすめ事業所ランキング
+                        </h2>
+                    </div>
+                    <span className="text-brand-muted text-sm">
+                        全{sortedOffices.length}件
                     </span>
                 </div>
 
@@ -41,17 +30,11 @@ export const RankingList: React.FC = () => {
                         />
                     ))
                 ) : (
-                    <div className="text-center py-12 bg-gray-50 rounded-lg border border-dashed border-gray-300">
-                        <p className="text-gray-500">条件に一致する事業所が見つかりませんでした。</p>
-                        <button
-                            onClick={() => setFilter({ area: 'All', skill: 'All' })}
-                            className="mt-4 text-blue-500 hover:underline"
-                        >
-                            条件をリセットする
-                        </button>
+                    <div className="text-center py-12 bg-brand-surface-alt rounded-lg border border-dashed border-black/10">
+                        <p className="text-brand-muted">現在表示できる事業所がありません。</p>
                     </div>
                 )}
             </div>
-        </div>
+        </section>
     );
 };

@@ -9,10 +9,13 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                'fog-white': '#F2F4F6', // Base: 70%
-                'muted-teal': '#8DA399', // Main: 25%
-                'deep-moss': '#2E4053', // Accent: 5% (Midnight Blue)
-                'blue-black': '#4A5056', // Text
+                'brand-lime': 'var(--brand-lime)',
+                'brand-lime-strong': 'var(--brand-lime-strong)',
+                'brand-orange': 'var(--brand-orange)',
+                'brand-surface': 'var(--brand-surface)',
+                'brand-surface-alt': 'var(--brand-surface-alt)',
+                'brand-text': 'var(--brand-text)',
+                'brand-muted': 'var(--brand-muted)',
             },
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
