@@ -16,3 +16,11 @@ body {
   color: var(--brand-text);
   background-color: var(--brand-surface);
 }
+
+.hero-title {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: 700;
+  line-height: 2.2;
+  letter-spacing: 0.15em;
+  color: #4a4a4a;
+}
