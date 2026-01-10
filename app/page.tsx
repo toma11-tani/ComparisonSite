@@ -15,17 +15,19 @@ export default function Home() {
                     backgroundImage: `url(${heroImageUrl})`,
                 }}
             >
-                <div className="max-w-4xl mx-auto flex flex-col items-start justify-center text-left min-h-[32vh]">
-                    <p className="text-xs font-semibold tracking-[0.2em] text-white uppercase">
-                        Kagoshima Employment Support
-                    </p>
-                    <h1 className="hero-title text-[1.7rem] md:text-[3rem] font-bold mt-6">
-                        鹿児島で、<br className="md:hidden" />
-                        自分らしく働くための
-                        <br />
-                        就労移行支援を選ぶ。
-                    </h1>
-                    <div className="scroll-hint mt-16">
+                <div className="w-full flex flex-col items-start justify-center text-left min-h-[32vh] md:pl-[33%]">
+                    <div className="max-w-[560px]">
+                        <p className="text-xs font-semibold tracking-[0.2em] text-white uppercase">
+                            Kagoshima Employment Support
+                        </p>
+                        <h1 className="hero-title text-[1.7rem] md:text-[3rem] font-bold mt-6">
+                            鹿児島で、<br className="md:hidden" />
+                            自分らしく働くための
+                            <br />
+                            就労移行支援を選ぶ。
+                        </h1>
+                    </div>
+                    <div className="scroll-hint mt-16 self-center">
                         Scroll
                         <span aria-hidden="true">↓</span>
                     </div>
