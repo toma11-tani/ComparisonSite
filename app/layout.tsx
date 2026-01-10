@@ -18,11 +18,6 @@ export default function RootLayout({
 }: {
     children: React.ReactNode;
 }) {
-    const heroImageUrl =
-        process.env.NODE_ENV === 'production'
-            ? '/ComparisonSite/assets/hero.jpg'
-            : '/assets/hero.jpg';
-
     return (
         <html lang="ja">
             <head>
@@ -30,10 +25,7 @@ export default function RootLayout({
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet" />
             </head>
-            <body
-                className={notoSans.className}
-                style={{ ['--hero-image-url' as any]: heroImageUrl }}
-            >
+            <body className={notoSans.className}>
                 <header className="bg-[rgba(122,163,74,0.9)] border-b border-black/10 sticky top-0 z-50">
                     <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-center">
                         <div className="font-bold text-lg md:text-xl text-white tracking-wide text-center">

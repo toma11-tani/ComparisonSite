@@ -2,9 +2,19 @@ import React from 'react';
 import { RankingList } from '../components/RankingList';
 
 export default function Home() {
+    const heroImageUrl =
+        process.env.NODE_ENV === 'production'
+            ? '/ComparisonSite/assets/hero.jpg'
+            : '/assets/hero.jpg';
+
     return (
         <main className="min-h-screen bg-brand-surface pb-20">
-            <section className="hero-section text-white pt-32 pb-36 px-4">
+            <section
+                className="hero-section text-white pt-32 pb-36 px-4"
+                style={{
+                    backgroundImage: `linear-gradient(rgba(122, 163, 74, 0.9), rgba(122, 163, 74, 0.9)), url(${heroImageUrl})`,
+                }}
+            >
                 <div className="max-w-4xl mx-auto flex flex-col items-center justify-center text-center min-h-[65vh]">
                     <p className="text-xs font-semibold tracking-[0.2em] text-white uppercase">
                         Kagoshima Employment Support

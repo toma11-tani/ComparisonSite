@@ -26,8 +26,6 @@ body {
 }
 
 .hero-section {
-  background: linear-gradient(rgba(122, 163, 74, 0.9), rgba(122, 163, 74, 0.9)),
-    url(var(--hero-image-url));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
