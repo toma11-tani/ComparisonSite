@@ -26,14 +26,6 @@ export default function RootLayout({
                 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet" />
             </head>
             <body className={notoSans.className}>
-                <header className="bg-[rgba(122,163,74,0.9)] border-b border-black/10 sticky top-0 z-50">
-                    <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-center">
-                        <div className="font-bold text-lg md:text-xl text-white tracking-wide text-center">
-                            鹿児島・就労移行支援ナビ
-                        </div>
-                    </div>
-                </header>
-
                 {children}
 
                 <footer id="contact" className="bg-brand-surface-alt border-t border-black/5 py-12 text-center text-sm">
