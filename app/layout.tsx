@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Zen_Kaku_Gothic_New } from 'next/font/google';
+import { Noto_Sans_JP } from 'next/font/google';
 import './globals.css';
 import { StickyFooter } from '../components/StickyFooter';
 
-const zenKaku = Zen_Kaku_Gothic_New({
+const notoSans = Noto_Sans_JP({
     subsets: ['latin'],
     weight: ['400', '500', '700'],
 });
@@ -20,17 +20,17 @@ export default function RootLayout({
 }) {
     return (
         <html lang="ja">
-            <body className={zenKaku.className}>
-                <header className="bg-brand-lime border-b border-black/10 sticky top-0 z-50">
+            <body className={notoSans.className}>
+                <header className="bg-brand-surface border-b border-black/5 sticky top-0 z-50">
                     <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
                         <div className="font-bold text-lg md:text-xl text-brand-text tracking-wide">
                             鹿児島・就労移行支援ナビ
                         </div>
                         <div className="hidden md:flex items-center gap-6 text-sm font-medium text-brand-muted">
-                            <a href="#rankings" className="hover:text-brand-text transition-colors">事業所一覧</a>
+                            <a href="#rankings" className="hover:text-brand-lime-strong transition-colors">事業所一覧</a>
                             <a
                                 href="#contact"
-                                className="bg-brand-surface text-brand-text px-4 py-2 rounded-md shadow-sm hover:opacity-90 transition-colors border border-black/10"
+                                className="bg-brand-orange text-white px-4 py-2 rounded-md shadow-sm hover:opacity-90 transition-colors"
                             >
                                 お問い合わせ
                             </a>
@@ -40,7 +40,7 @@ export default function RootLayout({
 
                 {children}
 
-                <footer id="contact" className="bg-brand-surface border-t border-black/10 py-12 text-center text-sm">
+                <footer id="contact" className="bg-brand-surface-alt border-t border-black/5 py-12 text-center text-sm">
                     <div className="max-w-5xl mx-auto px-4 text-brand-muted">
                         <p className="mb-4">
                             掲載情報に関するお問い合わせは
