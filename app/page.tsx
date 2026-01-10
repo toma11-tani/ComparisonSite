@@ -26,7 +26,7 @@ export default function Home() {
                                 自分らしく働くための
                             </span>
                             <br />
-                            <span className="inline-block">就労移行支援を選ぶ。</span>
+                            <span className="inline-block whitespace-nowrap">就労移行支援を選ぶ。</span>
                         </h1>
                     </div>
                     <div className="scroll-hint mt-16 w-full flex justify-center">
