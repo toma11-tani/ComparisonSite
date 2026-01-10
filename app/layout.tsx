@@ -20,6 +20,11 @@ export default function RootLayout({
 }) {
     return (
         <html lang="ja">
+            <head>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet" />
+            </head>
             <body className={notoSans.className}>
                 <header className="bg-brand-surface border-b border-black/5 sticky top-0 z-50">
                     <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">

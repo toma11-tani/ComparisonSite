@@ -11,7 +11,7 @@ export default function Home() {
                         <p className="text-xs font-semibold tracking-[0.2em] text-[#333333] uppercase">
                             Kagoshima Employment Support
                         </p>
-                        <h1 className="text-3xl md:text-5xl font-bold mt-4 leading-tight">
+                        <h1 className="hero-title text-3xl md:text-5xl font-bold mt-4 leading-tight">
                             鹿児島で、<br className="md:hidden" />
                             自分らしく働くための
                             <br />
