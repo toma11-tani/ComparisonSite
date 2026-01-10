@@ -24,3 +24,31 @@ body {
   letter-spacing: 0.15em;
   color: #4a4a4a;
 }
+
+.scroll-hint {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  animation: scroll-bob 1.8s ease-in-out infinite;
+}
+
+.scroll-hint span {
+  font-size: 1.2rem;
+}
+
+@keyframes scroll-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.65;
+  }
+  50% {
+    transform: translateY(6px);
+    opacity: 1;
+  }
+}
