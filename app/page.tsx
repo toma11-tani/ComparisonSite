@@ -12,7 +12,7 @@ export default function Home() {
             <section
                 className="hero-section text-white pt-32 pb-36 px-4"
                 style={{
-                    backgroundImage: `linear-gradient(90deg, rgba(122, 163, 74, 0) 0%, rgba(122, 163, 74, 0) 22%, rgba(122, 163, 74, 0.9) 33%, rgba(122, 163, 74, 0.9) 100%), url(${heroImageUrl})`,
+                    backgroundImage: `url(${heroImageUrl})`,
                 }}
             >
                 <div className="max-w-4xl mx-auto flex flex-col items-center justify-center text-center min-h-[42vh]">
