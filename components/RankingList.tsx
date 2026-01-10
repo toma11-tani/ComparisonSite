@@ -7,7 +7,7 @@ export const RankingList: React.FC = () => {
     const sortedOffices = sortOffices(offices);
 
     return (
-        <section id="rankings" className="max-w-5xl mx-auto px-4 py-10">
+        <section id="rankings" className="max-w-5xl mx-auto px-4 py-10 mt-[100px]">
             <div className="space-y-5">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-2">
                     <div>

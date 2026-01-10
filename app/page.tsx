@@ -5,10 +5,10 @@ import { CheckCircle } from 'lucide-react';
 export default function Home() {
     return (
         <main className="min-h-screen bg-brand-surface pb-20">
-            <section className="bg-brand-lime pt-16 pb-20 px-4">
+            <section className="bg-[#b8eb72] text-[#333333] pt-16 pb-20 px-4">
                 <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
                     <div>
-                        <p className="text-xs font-semibold tracking-[0.2em] text-brand-muted uppercase">
+                        <p className="text-xs font-semibold tracking-[0.2em] text-[#333333] uppercase">
                             Kagoshima Employment Support
                         </p>
                         <h1 className="text-3xl md:text-5xl font-bold mt-4 leading-tight">
@@ -17,7 +17,7 @@ export default function Home() {
                             <br />
                             就労移行支援を選ぶ。
                         </h1>
-                        <p className="text-base md:text-lg text-brand-muted mt-4">
+                        <p className="text-base md:text-lg text-[#333333] mt-4">
                             エリア、支援内容、特徴を見比べて、あなたに合う事業所をスムーズに探せます。
                         </p>
                         <div className="mt-8 flex flex-col sm:flex-row gap-4">
