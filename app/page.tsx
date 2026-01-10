@@ -15,7 +15,7 @@ export default function Home() {
                     backgroundImage: `url(${heroImageUrl})`,
                 }}
             >
-                <div className="max-w-4xl mx-auto flex flex-col items-center justify-center text-center min-h-[32vh]">
+                <div className="max-w-4xl mx-auto flex flex-col items-start justify-center text-left min-h-[32vh]">
                     <p className="text-xs font-semibold tracking-[0.2em] text-white uppercase">
                         Kagoshima Employment Support
                     </p>
