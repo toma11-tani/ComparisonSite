@@ -3,16 +3,30 @@
 @tailwind utilities;
 
 :root {
-  --brand-lime: #8DC63F;
-  --brand-lime-strong: #79B12E;
-  --brand-orange: #F39800;
+  --brand-lime: #b8eb72;
+  --brand-lime-strong: #8cb32f;
+  --brand-orange: #b8eb72;
   --brand-surface: #FFFFFF;
-  --brand-surface-alt: #F3F6EE;
-  --brand-text: #1F2A1F;
-  --brand-muted: #5A6A5A;
+  --brand-surface-alt: #FFFFFF;
+  --brand-text: #333333;
+  --brand-muted: #4A4A4A;
 }
 
 body {
   color: var(--brand-text);
   background-color: var(--brand-surface);
+}
+
+.hero-text {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  color: #333333;
+  line-height: 1.4;
+}
+
+.hero-text .highlight {
+  font-size: 1.4em;
+  font-weight: 700;
+  background: linear-gradient(transparent 60%, rgba(255, 255, 255, 0.7) 60%);
+  padding: 0 0.08em;
+  box-decoration-break: clone;
 }

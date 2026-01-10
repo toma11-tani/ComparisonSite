@@ -30,7 +30,7 @@ export const RankingList: React.FC = () => {
                         />
                     ))
                 ) : (
-                    <div className="text-center py-12 bg-brand-surface-alt rounded-lg border border-dashed border-black/10">
+                    <div className="text-center py-12 bg-white rounded-lg border border-dashed border-black/10">
                         <p className="text-brand-muted">現在表示できる事業所がありません。</p>
                     </div>
                 )}

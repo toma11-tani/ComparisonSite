@@ -15,7 +15,7 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank }) => {
     if (isClient) {
         return (
             <div className="relative w-full bg-brand-surface rounded-lg shadow-sm border border-brand-lime overflow-hidden mb-8 transition-shadow hover:shadow-md">
-                <div className="absolute top-0 left-0 bg-brand-lime-strong text-white text-sm font-medium px-4 py-1 rounded-br-md z-10 flex items-center gap-1">
+                <div className="absolute top-0 left-0 bg-brand-lime-strong text-brand-text text-sm font-medium px-4 py-1 rounded-br-md z-10 flex items-center gap-1">
                     <Star className="w-3 h-3 fill-current" />
                     編集部おすすめ
                 </div>
@@ -24,7 +24,7 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank }) => {
                     <div className="flex flex-col md:flex-row gap-6">
                         {/* Image Section */}
                         <div className="w-full md:w-1/3 shrink-0">
-                            <div className="aspect-video bg-brand-surface-alt rounded-lg overflow-hidden relative border border-black/5">
+                            <div className="aspect-video bg-white rounded-lg overflow-hidden relative border border-black/10">
                                 <div className="w-full h-full flex items-center justify-center text-brand-muted font-medium text-lg">
                                     {office.name} Image
                                 </div>
@@ -35,7 +35,7 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank }) => {
                         <div className="flex-1">
                             <h3 className="text-2xl md:text-3xl font-bold text-brand-text mb-2 flex items-center gap-2">
                                 {office.name}
-                                <span className="text-sm bg-brand-surface-alt text-brand-lime-strong px-2 py-1 rounded-md font-normal border border-brand-lime">
+                                <span className="text-sm bg-white text-brand-lime-strong px-2 py-1 rounded-md font-normal border border-brand-lime">
                                     {office.type === 'Transition' ? '就労移行支援' : '就労継続支援B型'}
                                 </span>
                             </h3>
@@ -51,7 +51,7 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank }) => {
 
                             <div className="flex flex-wrap gap-2 mb-6">
                                 {office.main_skills.map((skill) => (
-                                    <span key={skill} className="px-3 py-1 bg-brand-surface-alt text-brand-text rounded-md text-sm font-medium border border-black/5">
+                                    <span key={skill} className="px-3 py-1 bg-white text-brand-text rounded-md text-sm font-medium border border-black/10">
                                         {skill}
                                     </span>
                                 ))}
@@ -71,12 +71,12 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank }) => {
                                     href={office.meta.cta_link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex-1 bg-brand-orange hover:opacity-90 text-white font-bold py-4 px-6 rounded-md text-center shadow-sm transition-colors flex items-center justify-center gap-2 text-lg"
+                                    className="flex-1 bg-brand-lime hover:opacity-90 text-brand-text font-bold py-4 px-6 rounded-md text-center shadow-sm transition-colors flex items-center justify-center gap-2 text-lg border border-black/10"
                                 >
                                     <ExternalLink className="w-5 h-5" />
                                     無料見学を予約する
                                 </a>
-                                <div className="flex-1 bg-brand-surface-alt border border-black/5 rounded-md p-3 flex flex-col justify-center items-center text-sm text-brand-muted">
+                                <div className="flex-1 bg-white border border-black/10 rounded-md p-3 flex flex-col justify-center items-center text-sm text-brand-muted">
                                     <div className="flex items-center gap-2 font-bold text-lg text-brand-text">
                                         <Phone className="w-5 h-5 text-brand-lime-strong" />
                                         {office.meta.phone}
@@ -94,11 +94,11 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank }) => {
     // Platinum Tier (上位表示) - 少し背景を落としてリバーサルを目立たせる
     if (isPlatinum) {
         return (
-            <div className="w-full bg-brand-surface-alt rounded-lg shadow-sm border border-black/5 overflow-hidden mb-6">
+            <div className="w-full bg-white rounded-lg shadow-sm border border-black/10 overflow-hidden mb-6">
                 <div className="p-6">
                     <div className="flex flex-col md:flex-row gap-5">
                         <div className="w-full md:w-1/4 shrink-0">
-                            <div className="aspect-video bg-white rounded-md flex items-center justify-center text-brand-muted text-sm border border-black/5">
+                            <div className="aspect-video bg-white rounded-md flex items-center justify-center text-brand-muted text-sm border border-black/10">
                                 No Image
                             </div>
                         </div>
@@ -108,7 +108,7 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank }) => {
                                     <span className="text-brand-lime-strong mr-2">#{rank}</span>
                                     {office.name}
                                 </h3>
-                                <span className="text-xs bg-white text-brand-muted px-2 py-1 rounded border border-black/5">
+                                <span className="text-xs bg-white text-brand-muted px-2 py-1 rounded border border-black/10">
                                     {office.type === 'Transition' ? '移行' : 'B型'}
                                 </span>
                             </div>
@@ -124,7 +124,7 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank }) => {
 
                             <div className="flex flex-wrap gap-1 mb-4">
                                 {office.main_skills.slice(0, 3).map((skill) => (
-                                    <span key={skill} className="px-2 py-0.5 bg-white text-brand-muted rounded text-xs border border-black/5">
+                                    <span key={skill} className="px-2 py-0.5 bg-white text-brand-muted rounded text-xs border border-black/10">
                                         {skill}
                                     </span>
                                 ))}
@@ -132,7 +132,7 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank }) => {
 
                             <a
                                 href={office.meta.cta_link}
-                                className="block w-full bg-white hover:bg-brand-surface-alt text-brand-lime-strong border border-brand-lime text-center py-2 rounded-md text-sm font-bold transition-colors"
+                                className="block w-full bg-white hover:bg-brand-lime text-brand-lime-strong border border-brand-lime text-center py-2 rounded-md text-sm font-bold transition-colors"
                             >
                                 詳細を見る
                             </a>
@@ -145,7 +145,7 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank }) => {
 
     // Basic Tier (簡易表示)
     return (
-        <div className="w-full bg-brand-surface-alt border-b border-black/5 p-4 hover:bg-white transition-colors">
+        <div className="w-full bg-white border-b border-black/10 p-4 hover:bg-brand-surface transition-colors">
             <div className="flex justify-between items-center">
                 <div>
                     <h3 className="font-bold text-brand-text">
