@@ -16,11 +16,3 @@ body {
   color: var(--brand-text);
   background-color: var(--brand-surface);
 }
-
-.hero-title {
-  font-family: 'Noto Serif JP', serif;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: #333333;
-  line-height: 1.6;
-}
