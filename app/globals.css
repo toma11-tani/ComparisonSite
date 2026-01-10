@@ -20,13 +20,13 @@ body {
 .hero-title {
   font-family: 'Zen Maru Gothic', sans-serif;
   font-weight: 700;
-  line-height: 2.2;
-  letter-spacing: 0.15em;
+  line-height: 1.9;
+  letter-spacing: 0.08em;
   color: #ffffff;
 }
 
 .hero-section {
-  background-size: cover;
+  background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
 }

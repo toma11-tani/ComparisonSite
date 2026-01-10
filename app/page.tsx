@@ -16,7 +16,7 @@ export default function Home() {
                 }}
             >
                 <div className="w-full flex flex-col justify-center min-h-[32vh]">
-                    <div className="max-w-[720px] text-left md:pl-[36%]">
+                    <div className="max-w-[880px] text-left md:pl-[32%]">
                         <p className="text-xs font-semibold tracking-[0.2em] text-white uppercase">
                             Kagoshima Employment Support
                         </p>
