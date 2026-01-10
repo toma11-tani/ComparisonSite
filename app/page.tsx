@@ -15,8 +15,8 @@ export default function Home() {
                     backgroundImage: `url(${heroImageUrl})`,
                 }}
             >
-                <div className="w-full flex flex-col items-start justify-center text-left min-h-[32vh] md:pl-[33%]">
-                    <div className="max-w-[560px]">
+                <div className="w-full flex flex-col justify-center min-h-[32vh]">
+                    <div className="max-w-[720px] text-left md:pl-[36%]">
                         <p className="text-xs font-semibold tracking-[0.2em] text-white uppercase">
                             Kagoshima Employment Support
                         </p>
@@ -27,7 +27,7 @@ export default function Home() {
                             就労移行支援を選ぶ。
                         </h1>
                     </div>
-                    <div className="scroll-hint mt-16 self-center">
+                    <div className="scroll-hint mt-16 w-full flex justify-center">
                         Scroll
                         <span aria-hidden="true">↓</span>
                     </div>
