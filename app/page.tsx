@@ -12,10 +12,10 @@ export default function Home() {
             <section
                 className="hero-section text-white pt-32 pb-36 px-4"
                 style={{
-                    backgroundImage: `linear-gradient(rgba(122, 163, 74, 0.9), rgba(122, 163, 74, 0.9)), url(${heroImageUrl})`,
+                    backgroundImage: `linear-gradient(90deg, rgba(122, 163, 74, 0) 0%, rgba(122, 163, 74, 0) 33%, rgba(122, 163, 74, 0.6) 50%, rgba(122, 163, 74, 0.9) 66%, rgba(122, 163, 74, 0.9) 100%), url(${heroImageUrl})`,
                 }}
             >
-                <div className="max-w-4xl mx-auto flex flex-col items-center justify-center text-center min-h-[65vh]">
+                <div className="max-w-4xl mx-auto flex flex-col items-center justify-center text-center min-h-[42vh]">
                     <p className="text-xs font-semibold tracking-[0.2em] text-white uppercase">
                         Kagoshima Employment Support
                     </p>
