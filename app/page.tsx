@@ -15,7 +15,7 @@ export default function Home() {
     return (
         <main className="min-h-screen bg-brand-surface pb-20">
             <section
-                className="hero-section hero-section-mobile md:hero-section-desktop text-white py-20 px-4"
+                className="hero-section text-white py-20 px-4"
                 style={{
                     '--hero-image-mobile': `url(${heroImageUrlMobile})`,
                     '--hero-image-desktop': `url(${heroImageUrlDesktop})`,
@@ -26,7 +26,7 @@ export default function Home() {
                         <p className="text-xs font-semibold tracking-[0.2em] text-white uppercase">
                             <span className="inline-block md:whitespace-nowrap">Kagoshima Employment Support</span>
                         </p>
-                        <h1 className="hero-title text-[1.4rem] md:text-[3rem] font-bold mt-6">
+                        <h1 className="hero-title text-[1.75rem] md:text-[3rem] font-bold mt-6">
                             鹿児島で、<br className="md:hidden" />
                             <span className="md:whitespace-nowrap">
                                 自分らしく働くための

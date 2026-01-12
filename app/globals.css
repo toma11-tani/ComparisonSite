@@ -28,15 +28,12 @@ body {
 .hero-section {
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.hero-section-mobile {
   background-image: var(--hero-image-mobile);
   background-size: cover;
 }
 
 @media (min-width: 768px) {
-  .hero-section-desktop {
+  .hero-section {
     background-image: var(--hero-image-desktop);
     background-size: 100% auto;
   }
