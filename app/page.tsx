@@ -1,5 +1,5 @@
 import React from 'react';
-import { RankingList } from '../components/RankingList';
+import { DiagnosisFlow } from '../components/DiagnosisFlow';
 
 export default function Home() {
     const heroImageUrlDesktop =
@@ -43,7 +43,7 @@ export default function Home() {
             </section>
 
             <div className="-mt-10 relative z-20">
-                <RankingList />
+                <DiagnosisFlow />
             </div>
 
             <section className="bg-brand-surface-alt">

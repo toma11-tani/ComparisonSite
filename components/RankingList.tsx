@@ -1,32 +1,49 @@
-import React from 'react';
 import { offices } from '../data/offices';
-import { sortOffices } from '../utils/rankingEngine';
 import { OfficeCard } from './OfficeCard';
 
-export const RankingList: React.FC = () => {
-    const sortedOffices = sortOffices(offices);
+const preferredBrandOrder = [
+    'リバーサル鹿児島',
+    'ゴシキワーク',
+    'ラシーネ',
+    'ウェルビー',
+    'マナビー',
+    'HAC',
+    '障害者就労アカデミー',
+    'クローバー',
+    'ウィズ',
+    'ティオ'
+] as const;
 
+const getOfficeBrand = (name: string): (typeof preferredBrandOrder)[number] => {
+    if (name.startsWith('ウェルビー')) return 'ウェルビー';
+    if (name.startsWith('ティオ')) return 'ティオ';
+    if (name.startsWith('マナビー')) return 'マナビー';
+    return (preferredBrandOrder.find((brand) => name.startsWith(brand)) ?? 'HAC') as (typeof preferredBrandOrder)[number];
+};
+
+const comparisonOffices = preferredBrandOrder
+    .map((brand) => offices.find((office) => getOfficeBrand(office.name) === brand))
+    .filter((office): office is (typeof offices)[number] => Boolean(office));
+
+export const RankingList: React.FC = () => {
     return (
         <section id="rankings" className="max-w-5xl mx-auto px-4 py-10 mt-[100px]">
-            <div className="space-y-5">
-                <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-2">
+            <div className="space-y-6">
+                <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3">
                     <div>
-                        <p className="text-sm text-brand-muted">事業所一覧</p>
-                        <h2 className="text-2xl font-bold text-brand-text">
-                            おすすめ事業所ランキング
-                        </h2>
+                        <p className="text-base text-brand-muted">事業所一覧</p>
+                        <h2 className="text-3xl font-bold text-brand-text">鹿児島 就労移行支援 比較一覧</h2>
                     </div>
-                    <span className="text-brand-muted text-sm">
-                        全{sortedOffices.length}件
-                    </span>
+                    <span className="text-brand-muted text-base">全{comparisonOffices.length}件</span>
                 </div>
 
-                {sortedOffices.length > 0 ? (
-                    sortedOffices.map((office, index) => (
+                {comparisonOffices.length > 0 ? (
+                    comparisonOffices.map((office, index) => (
                         <OfficeCard
                             key={office.id}
                             office={office}
                             rank={index + 1}
+                            mode="comparison"
                         />
                     ))
                 ) : (
