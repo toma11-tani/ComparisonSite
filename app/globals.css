@@ -18,7 +18,7 @@ body {
 }
 
 .hero-title {
-  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: inherit;
   font-weight: 700;
   line-height: 1.9;
   letter-spacing: 0.05em;
