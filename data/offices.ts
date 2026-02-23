@@ -26,7 +26,7 @@ export const offices: Office[] = [
             remoteSupport: 'available',
             nearMajorStation: true,
             supportStyle: 'hands_on',
-            programStrengths: ['it_web', 'office', 'life_rhythm'],
+            programStrengths: ['office', 'practical', 'life_rhythm'],
             paceFits: ['steady', 'standard']
         }
     },
@@ -55,7 +55,7 @@ export const offices: Office[] = [
             remoteSupport: 'none',
             nearMajorStation: false,
             supportStyle: 'hands_on',
-            programStrengths: ['practical', 'office'],
+            programStrengths: ['practical', 'life_rhythm'],
             paceFits: ['steady', 'standard']
         }
     },
@@ -84,7 +84,7 @@ export const offices: Office[] = [
             remoteSupport: 'available',
             nearMajorStation: true,
             supportStyle: 'hands_on',
-            programStrengths: ['office', 'life_rhythm'],
+            programStrengths: ['office', 'practical', 'life_rhythm'],
             paceFits: ['steady', 'standard']
         }
     },
@@ -113,7 +113,7 @@ export const offices: Office[] = [
             remoteSupport: 'none',
             nearMajorStation: true,
             supportStyle: 'balanced',
-            programStrengths: ['office', 'life_rhythm'],
+            programStrengths: ['office', 'practical', 'life_rhythm'],
             paceFits: ['standard', 'fast']
         }
     },
@@ -168,7 +168,7 @@ export const offices: Office[] = [
             remoteSupport: 'strong',
             nearMajorStation: true,
             supportStyle: 'self_paced',
-            programStrengths: ['it_web', 'office'],
+            programStrengths: ['it_web', 'office', 'practical'],
             paceFits: ['steady', 'standard']
         }
     },
@@ -197,7 +197,7 @@ export const offices: Office[] = [
             remoteSupport: 'none',
             nearMajorStation: true,
             supportStyle: 'balanced',
-            programStrengths: ['office', 'life_rhythm'],
+            programStrengths: ['office', 'practical', 'life_rhythm'],
             paceFits: ['steady', 'standard']
         }
     },
