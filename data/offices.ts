@@ -15,12 +15,13 @@ export const offices: Office[] = [
         tier: 'Platinum',
         meta: {
             description: '通所と在宅訓練の相談ができる就労移行支援事業所。就職後の定着支援や復職支援の案内があります。',
-            address: '鹿児島県鹿児島市中町3-5 ババデンキビル4F',
+            address: '鹿児島市中町3-5 ババデンキビル4階',
             nearest_station: '天文館通駅',
             walking_minutes: 2,
             cta_link: 'https://www.ribasarukagoshima.jp/',
             image_url: '/images/reversal.jpg',
-            phone: '099-813-7733'
+            phone: '099-813-7733',
+            access_map_url: 'https://maps.app.goo.gl/4whxEjFWCUBytcoKA'
         },
         matching: {
             remoteSupport: 'available',
@@ -45,11 +46,12 @@ export const offices: Office[] = [
         meta: {
             description: '就労移行に加え、同法人内で就労定着・B型・生活訓練を展開。企業実習や就職後フォローの情報があります。',
             address: '鹿児島県鹿児島市武1丁目34-6',
-            nearest_station: '中洲通電停',
+            nearest_station: '中洲通駅',
             walking_minutes: 4,
             cta_link: 'https://www.regoshiki.com/',
             image_url: '/images/goshiki.jpg',
-            phone: '099-214-2535'
+            phone: '099-214-2535',
+            access_map_url: 'https://maps.app.goo.gl/QBkvLdUi2NJomwGE7'
         },
         matching: {
             remoteSupport: 'none',
@@ -74,11 +76,12 @@ export const offices: Office[] = [
         meta: {
             description: '就労移行と就労定着を提供し、在宅支援の案内もある事業所です。',
             address: '鹿児島県鹿児島市郡元2丁目1-4',
-            nearest_station: '中郡電停',
+            nearest_station: '中郡駅',
             walking_minutes: 1,
             cta_link: 'https://www.npo-racine.com/ラシーネ',
             image_url: '/images/racine.jpg',
-            phone: '099-813-8852'
+            phone: '099-813-8852',
+            access_map_url: 'https://maps.app.goo.gl/SCwUX34qc5jqRtTj6'
         },
         matching: {
             remoteSupport: 'available',
@@ -102,12 +105,13 @@ export const offices: Office[] = [
         tier: 'Platinum',
         meta: {
             description: '鹿児島中央駅徒歩圏。就労移行・定着に加え、復職支援（リワーク）にも対応する拠点です。',
-            address: '鹿児島県鹿児島市上之園町4-6 アルベラータ上之園 2階B号室',
-            nearest_station: '鹿児島中央駅（東口）',
+            address: '鹿児島県鹿児島市上之園町4-6アルベラータ上之園 2階B号室',
+            nearest_station: '鹿児島中央駅',
             walking_minutes: 8,
             cta_link: 'https://www.welbe.co.jp/center/kagoshima/kagoshimachuo.html',
             image_url: '/images/welbe.jpg',
-            phone: '099-230-7601'
+            phone: '099-230-7601',
+            access_map_url: 'https://maps.app.goo.gl/FsGQKRG4CLB6BBa3A'
         },
         matching: {
             remoteSupport: 'none',
@@ -160,9 +164,10 @@ export const offices: Office[] = [
             address: '鹿児島県鹿児島市山之口町1-30 Idehara-BLD 8階',
             nearest_station: '高見馬場駅',
             walking_minutes: 1,
-            cta_link: 'https://manaby.co.jp/office/kagoshima/',
+            cta_link: 'https://works.manaby.co.jp/location/kagoshima/',
             image_url: '/images/manaby.jpg',
-            phone: '099-201-5231'
+            phone: '099-201-5231',
+            access_map_url: 'https://maps.app.goo.gl/15PWchDZp5Ae3S8y9'
         },
         matching: {
             remoteSupport: 'strong',
@@ -187,11 +192,12 @@ export const offices: Office[] = [
         meta: {
             description: '新屋敷電停近くの就労移行支援事業所。パンフで日課や昼食提供の案内があります。',
             address: '鹿児島県鹿児島市新屋敷町16番 公社ビル420号',
-            nearest_station: '新屋敷電停',
+            nearest_station: '新屋敷駅',
             walking_minutes: 1,
             cta_link: 'https://hac-kg.co.jp/',
             image_url: '/images/hac.jpg',
-            phone: '099-298-9689'
+            phone: '099-298-9689',
+            access_map_url: 'https://maps.app.goo.gl/ZgDVn4Ab5BZLMhRn9'
         },
         matching: {
             remoteSupport: 'none',
@@ -213,11 +219,12 @@ export const offices: Office[] = [
         meta: {
             description: '選択→移行→定着まで一体で提供。実習中心で適職探索を進める支援スタイルです。',
             address: '鹿児島県鹿児島市新屋敷町16番401号・406号',
-            nearest_station: '新屋敷バス停',
+            nearest_station: '新屋敷駅',
             walking_minutes: 1,
-            cta_link: 'https://shuro-academy.jp/about/',
+            cta_link: 'https://kaminokawa.synapse-site.jp/contents/academy/index.html',
             image_url: '/images/academy.jpg',
-            phone: '099-219-3456'
+            phone: '099-219-3456',
+            access_map_url: 'https://maps.app.goo.gl/zFmVMF7SDqwZ26PA8'
         },
         matching: {
             remoteSupport: 'none',
@@ -238,12 +245,13 @@ export const offices: Office[] = [
         tier: 'Basic',
         meta: {
             description: '高見馬場近くの事業所。外部DBで就労移行・就労定着の種別情報が確認できます。',
-            address: '鹿児島県鹿児島市西千石町17-28 NADESHIKOビル6F',
+            address: '鹿児島市西千石町17-28 NADESHIKOビル6F',
             nearest_station: '高見馬場駅',
             walking_minutes: 3,
-            cta_link: 'https://www.bsd.jp.net/office.html',
+            cta_link: 'http://www.bsd.jp.net/',
             image_url: '/images/clover.jpg',
-            phone: '099-248-8771'
+            phone: '099-248-8771',
+            access_map_url: 'https://maps.app.goo.gl/7w1wSE7G5U3og4dC9'
         },
         matching: {
             remoteSupport: 'none',
@@ -265,11 +273,12 @@ export const offices: Office[] = [
         meta: {
             description: '生活訓練・就労移行・B型・定着までを提供する多機能型事業所です。',
             address: '鹿児島県鹿児島市谷山中央2丁目657番4',
-            nearest_station: 'JR谷山駅',
-            walking_minutes: 15,
+            nearest_station: '谷山駅',
+            walking_minutes: 10,
             cta_link: 'https://tokiwakai.com/sisetsu/shogai/wiz/',
             image_url: '/images/with.jpg',
-            phone: '099-299-0300'
+            phone: '099-299-0300',
+            access_map_url: 'https://maps.app.goo.gl/hP9zJGm5jcySHeTT6'
         },
         matching: {
             remoteSupport: 'none',
@@ -290,12 +299,13 @@ export const offices: Office[] = [
         tier: 'Platinum',
         meta: {
             description: '通所と在宅オンラインを併用しやすい就労移行支援。面接同行やPC貸与などの記載があります。',
-            address: '鹿児島県鹿児島市西田1丁目4-12 下釜ビル2階',
-            nearest_station: '鹿児島中央駅（東口）',
-            walking_minutes: 5,
-            cta_link: 'https://fit2022.or.jp/access/kagoshima_chuo/',
+            address: '鹿児島県鹿児島市西田1丁目4−12 下釜ビル2階',
+            nearest_station: '高見橋駅',
+            walking_minutes: 2,
+            cta_link: 'https://fit2022.or.jp/',
             image_url: '/images/tio-chuo.jpg',
-            phone: '099-272-9777'
+            phone: '099-272-9777',
+            access_map_url: 'https://maps.app.goo.gl/tLEkz8kYGkzpwRjY9'
         },
         matching: {
             remoteSupport: 'strong',

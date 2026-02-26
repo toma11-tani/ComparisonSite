@@ -76,7 +76,7 @@ export default function OfficeDetailPage({ params }: Props) {
                     <div className="space-y-2">
                         <p className="text-sm font-semibold text-brand-lime-strong">補助内容</p>
                         <div className="flex flex-wrap gap-1">
-                            {(office.support_benefits?.length ? office.support_benefits : ['未掲載']).map((item) => (
+                            {(office.support_benefits ?? []).map((item) => (
                                 <span key={`benefit-${item}`} className="px-2.5 py-1 bg-brand-surface-alt text-brand-muted rounded text-sm border border-black/10">
                                     {item}
                                 </span>
