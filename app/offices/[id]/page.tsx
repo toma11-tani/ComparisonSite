@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { offices } from '../../../data/offices';
+import { SitePolicyPanel } from '../../../components/SitePolicyPanel';
 
 type Props = {
     params: { id: string };
@@ -20,8 +21,8 @@ export function generateMetadata({ params }: Props): Metadata {
         return { title: '事業所情報' };
     }
     return {
-        title: `${office.name} | 鹿児島 就労移行支援ナビ`,
-        description: `${office.name}の基本情報、支援内容、診断導線を掲載しています。`
+        title: `${office.name} | リバーサル鹿児島`,
+        description: `${office.name}の基本情報や支援内容を掲載している、リバーサル鹿児島運営の案内ページです。`
     };
 }
 
@@ -37,10 +38,21 @@ export default function OfficeDetailPage({ params }: Props) {
         <main className="min-h-screen bg-brand-surface pb-20">
             <section className="max-w-5xl mx-auto px-4 py-12 space-y-6">
                 <div className="rounded-xl border border-black/10 bg-white p-6">
+                    <p className="text-xs font-semibold tracking-[0.08em] uppercase text-brand-lime-strong">
+                        Operated by Reversal Kagoshima
+                    </p>
                     <p className="text-sm text-brand-muted">事業所詳細</p>
                     <h1 className="text-3xl md:text-4xl font-bold text-brand-text mt-1">{office.name}</h1>
                     <p className="text-base text-brand-muted mt-3 leading-relaxed">{office.meta.description}</p>
                 </div>
+
+                <div className="rounded-lg border border-black/10 bg-brand-surface-alt p-5">
+                    <p className="text-base text-brand-muted leading-relaxed">
+                        このページはリバーサル鹿児島が運営する案内ページです。第三者が運営する中立的な案内ページではありません。
+                    </p>
+                </div>
+
+                <SitePolicyPanel compact />
 
                 <div className="rounded-lg border border-black/10 bg-white p-5 space-y-3">
                     <h2 className="text-xl font-bold text-brand-text">基本情報</h2>
@@ -108,20 +120,20 @@ export default function OfficeDetailPage({ params }: Props) {
                 </div>
 
                 <div className="rounded-lg border border-brand-orange/50 bg-white p-5">
-                    <h2 className="text-2xl font-bold text-brand-text">あなたに合う就労移行支援を10秒で診断</h2>
-                    <p className="text-base text-brand-muted mt-2">5問に答えるだけで、おすすめを表示します。</p>
+                    <h2 className="text-2xl font-bold text-brand-text">5問で事業所選びのタイプを診断</h2>
+                    <p className="text-base text-brand-muted mt-2">回答内容から、自分に合う選び方や見学で確認したいポイントを表示します。</p>
                     <div className="mt-4 flex flex-wrap gap-2">
                         <Link
                             href="/#diagnosis"
                             className="bg-brand-orange text-white font-bold py-2.5 px-5 rounded-md hover:opacity-90"
                         >
-                            無料で診断する
+                            タイプ診断を見る
                         </Link>
                         <Link
                             href={`/?focus=${office.id}`}
                             className="border border-black/20 bg-white text-brand-text py-2.5 px-5 rounded-md"
                         >
-                            比較一覧に戻る
+                            掲載事業所一覧に戻る
                         </Link>
                     </div>
                 </div>

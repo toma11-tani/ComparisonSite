@@ -31,8 +31,11 @@ export const RankingList: React.FC = () => {
             <div className="space-y-6">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3">
                     <div>
-                        <p className="text-base text-brand-muted">事業所一覧</p>
-                        <h2 className="text-3xl font-bold text-brand-text">鹿児島 就労移行支援 比較一覧</h2>
+                        <p className="text-base text-brand-muted">掲載事業所</p>
+                        <h2 className="text-3xl font-bold text-brand-text">鹿児島の掲載事業所一覧</h2>
+                        <p className="mt-2 text-sm text-brand-muted leading-relaxed">
+                            掲載順は順位ではありません。各事業所の公開情報をもとに掲載しています。
+                        </p>
                     </div>
                     <span className="text-brand-muted text-base">全{comparisonOffices.length}件</span>
                 </div>

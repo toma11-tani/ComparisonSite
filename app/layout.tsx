@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Noto_Sans_JP } from 'next/font/google';
 import './globals.css';
-import { StickyFooter } from '../components/StickyFooter';
 
 const notoSans = Noto_Sans_JP({
     subsets: ['latin'],
@@ -9,8 +8,8 @@ const notoSans = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-    title: '鹿児島・就労移行支援ナビ | あなたに最適な事業所が見つかる',
-    description: '鹿児島市内の就労移行支援事業所を徹底比較。天文館・中央駅エリアを中心に、ITスキル、在宅ワークなどあなたの希望に合った事業所をランキング形式でご紹介します。',
+    title: 'リバーサル鹿児島 | 鹿児島の就労移行支援案内サイト',
+    description: 'リバーサル鹿児島が運営する、鹿児島の就労移行支援案内サイトです。5問診断で、自分に合う事業所の選び方や見学のポイントを整理できます。',
 };
 
 export default function RootLayout({
@@ -25,18 +24,26 @@ export default function RootLayout({
 
                 <footer id="contact" className="bg-brand-surface-alt border-t border-black/5 py-12 text-center text-sm">
                     <div className="max-w-5xl mx-auto px-4 text-brand-muted">
+                        <p className="text-xs font-semibold tracking-[0.08em] uppercase text-brand-lime-strong">
+                            Operated by Reversal Kagoshima
+                        </p>
+                        <p className="mt-2 text-base font-medium text-brand-text">運営元: リバーサル鹿児島</p>
                         <p className="mb-4">
                             掲載情報に関するお問い合わせは
-                            <a href="#" className="text-brand-lime-strong font-medium underline underline-offset-4 hover:opacity-80">
+                            <a
+                                href="https://www.ribasarukagoshima.jp/contents/category/contact/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-brand-lime-strong font-medium underline underline-offset-4 hover:opacity-80"
+                            >
                                 こちら
                             </a>
                             から
                         </p>
-                        <p>&copy; 2024 Kagoshima Employment Support Navi. All rights reserved.</p>
+                        <p>&copy; 2026 リバーサル鹿児島 All Rights Reserved.</p>
                     </div>
                 </footer>
 
-                <StickyFooter />
             </body>
         </html>
     );

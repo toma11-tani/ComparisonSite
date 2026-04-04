@@ -31,7 +31,7 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank, reasons, m
             {isClientHighlight ? (
                 <div className="absolute top-0 left-0 bg-brand-lime-strong text-white text-sm font-medium px-3 py-1.5 rounded-br-md z-10 flex items-center gap-1">
                     <Star className="w-3 h-3 fill-current" />
-                    編集部おすすめ
+                    運営事業所
                 </div>
             ) : null}
 
@@ -44,10 +44,7 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank, reasons, m
                     </div>
                     <div className="flex-1">
                         <div className="flex justify-between items-start mb-2">
-                            <h3 className="text-2xl font-bold text-brand-text">
-                                <span className="text-brand-lime-strong mr-2">#{rank}</span>
-                                {office.name}
-                            </h3>
+                            <h3 className="text-2xl font-bold text-brand-text">{office.name}</h3>
                             <span className="text-sm bg-brand-surface-alt text-brand-lime-strong px-2.5 py-1 rounded-md border border-brand-lime">
                                 {office.type === 'Transition' ? '就労移行支援' : '就労継続支援B型'}
                             </span>
