@@ -3,15 +3,8 @@ import { DiagnosisFlow } from '../components/DiagnosisFlow';
 import { SitePolicyPanel } from '../components/SitePolicyPanel';
 
 export default function Home() {
-    const heroImageUrlDesktop =
-        process.env.NODE_ENV === 'production'
-            ? '/ComparisonSite/assets/hero.jpg'
-            : '/assets/hero.jpg';
-
-    const heroImageUrlMobile =
-        process.env.NODE_ENV === 'production'
-            ? '/ComparisonSite/assets/hero_media.jpg'
-            : '/assets/hero_media.jpg';
+    const heroImageUrlDesktop = '/assets/hero.jpg';
+    const heroImageUrlMobile = '/assets/hero_media.jpg';
 
     return (
         <main className="min-h-screen bg-brand-surface pb-20">
