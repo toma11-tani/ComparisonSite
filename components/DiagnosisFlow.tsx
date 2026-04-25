@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { offices } from '../data/offices';
 import { quizQuestions } from '../utils/rankingEngine';
@@ -316,12 +315,14 @@ export const DiagnosisFlow: React.FC = () => {
                             {reversalPromotion.note}
                         </p>
                         <div className="mt-5">
-                            <Link
-                                href="/offices/reversal-kagoshima"
+                            <a
+                                href="https://www.ribasarukagoshima.jp/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center rounded-md bg-brand-orange px-5 py-2.5 text-base font-bold text-white hover:opacity-90"
                             >
                                 リバーサル鹿児島の詳細を見る
-                            </Link>
+                            </a>
                         </div>
                     </div>
 
