@@ -7,6 +7,7 @@ import { getDiagnosisProfile } from '../utils/diagnosisProfile';
 import { getReversalPromotion } from '../utils/reversalPromotion';
 import { QuizAnswers } from '../types';
 import { OfficeCard } from './OfficeCard';
+import { trackEvent } from '../utils/analytics';
 
 const initialAnswers: QuizAnswers = {
     deliveryMode: 'commute',
@@ -243,6 +244,10 @@ export const DiagnosisFlow: React.FC = () => {
                             setHasStarted(true);
                             setShowDiagnosisResult(true);
                             setSubmitCount((prev) => prev + 1);
+                            const profile = getDiagnosisProfile(answers);
+                            trackEvent('diagnosis_complete', {
+                                profile_id: profile.id
+                            });
                         }}
                         className="bg-brand-orange text-white font-bold py-3 px-5 rounded-md hover:opacity-90 text-base"
                     >
@@ -319,6 +324,14 @@ export const DiagnosisFlow: React.FC = () => {
                                 href="https://www.ribasarukagoshima.jp/"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                onClick={() =>
+                                    trackEvent('cta_click', {
+                                        office_id: 'reversal-kagoshima',
+                                        office_name: 'リバーサル鹿児島',
+                                        link_type: 'pr_reversal',
+                                        location: 'diagnosis_pr_card'
+                                    })
+                                }
                                 className="inline-flex items-center justify-center rounded-md bg-brand-orange px-5 py-2.5 text-base font-bold text-white hover:opacity-90"
                             >
                                 リバーサル鹿児島の詳細を見る

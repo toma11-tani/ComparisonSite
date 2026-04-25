@@ -1,7 +1,10 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import { Office } from '../types';
 import { MapPin, Phone, ExternalLink, Star } from 'lucide-react';
+import { trackEvent } from '../utils/analytics';
 
 interface OfficeCardProps {
     office: Office;
@@ -132,6 +135,14 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank, reasons, m
                                 href={office.meta.cta_link}
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                onClick={() =>
+                                    trackEvent('cta_click', {
+                                        office_id: office.id,
+                                        office_name: office.name,
+                                        link_type: 'hp',
+                                        location: 'office_card'
+                                    })
+                                }
                                 className={`flex-1 text-center py-2.5 rounded-md text-base font-bold transition-colors border ${
                                     isClientHighlight
                                         ? 'bg-brand-orange text-white border-brand-orange hover:opacity-90'
@@ -143,6 +154,13 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank, reasons, m
                             {telLink ? (
                                 <a
                                     href={telLink}
+                                    onClick={() =>
+                                        trackEvent('phone_tap', {
+                                            office_id: office.id,
+                                            office_name: office.name,
+                                            location: 'office_card'
+                                        })
+                                    }
                                     className="flex-1 bg-brand-surface border border-black/10 text-brand-text text-center py-2.5 rounded-md text-base font-semibold hover:bg-white"
                                 >
                                     電話する: {office.meta.phone}

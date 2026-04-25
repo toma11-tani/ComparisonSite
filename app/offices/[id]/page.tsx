@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { offices } from '../../../data/offices';
 import { SitePolicyPanel } from '../../../components/SitePolicyPanel';
+import { TrackedLink } from '../../../components/TrackedLink';
 
 type Props = {
     params: { id: string };
@@ -71,14 +72,21 @@ export default function OfficeDetailPage({ params }: Props) {
                         >
                             MAPを見る
                         </a>
-                        <a
+                        <TrackedLink
                             href={office.meta.cta_link}
                             target="_blank"
                             rel="noopener noreferrer"
+                            eventName="cta_click"
+                            eventParams={{
+                                office_id: office.id,
+                                office_name: office.name,
+                                link_type: 'hp',
+                                location: 'office_detail'
+                            }}
                             className="bg-brand-orange text-white font-bold py-2 px-4 rounded-md text-sm"
                         >
                             公式サイトを見る
-                        </a>
+                        </TrackedLink>
                     </div>
                 </div>
 
