@@ -12,7 +12,6 @@ export const offices: Office[] = [
         main_skills: ['就労移行支援', '定着支援', '復職（リワーク）支援'],
         features: ['天文館通駅 徒歩2分', '在宅訓練の相談可', '昼食無料・資格補助の記載あり'],
         is_client: true,
-        tier: 'Platinum',
         meta: {
             description: '通所と在宅訓練の相談ができる就労移行支援事業所。就職後の定着支援や復職支援の案内があります。',
             address: '鹿児島市中町3-5 ババデンキビル4階',
@@ -22,13 +21,6 @@ export const offices: Office[] = [
             image_url: '/images/reversal.jpg',
             phone: '099-813-7733',
             access_map_url: 'https://maps.app.goo.gl/4whxEjFWCUBytcoKA'
-        },
-        matching: {
-            remoteSupport: 'available',
-            nearMajorStation: true,
-            supportStyle: 'hands_on',
-            programStrengths: ['office', 'practical', 'life_rhythm'],
-            paceFits: ['steady', 'standard']
         }
     },
     {
@@ -40,9 +32,8 @@ export const offices: Office[] = [
         job_programs: ['座学', 'グループワーク', 'JST（職場対人技能訓練）', '施設内作業・施設外作業', '企業見学（個別）', '企業実習（全体）'],
         job_hunt_support: ['ハローワーク同行', '面接同行', '就労定着支援（職場訪問によるサポート）'],
         main_skills: ['就労移行支援', '企業見学・実習', '定着支援'],
-        features: ['中洲通電停 徒歩約4分（補完）', '同法人で定着/B型/生活訓練を運営', 'ジョブコーチの言及あり'],
+        features: ['中洲通電停 徒歩約4分（推定）', '同法人で定着/B型/生活訓練を運営', 'ジョブコーチの言及あり'],
         is_client: false,
-        tier: 'Basic',
         meta: {
             description: '就労移行に加え、同法人内で就労定着・B型・生活訓練を展開。企業実習や就職後フォローの情報があります。',
             address: '鹿児島県鹿児島市武1丁目34-6',
@@ -52,13 +43,6 @@ export const offices: Office[] = [
             image_url: '/images/goshiki.jpg',
             phone: '099-214-2535',
             access_map_url: 'https://maps.app.goo.gl/QBkvLdUi2NJomwGE7'
-        },
-        matching: {
-            remoteSupport: 'none',
-            nearMajorStation: false,
-            supportStyle: 'hands_on',
-            programStrengths: ['practical', 'life_rhythm'],
-            paceFits: ['steady', 'standard']
         }
     },
     {
@@ -70,9 +54,8 @@ export const offices: Office[] = [
         job_programs: ['グループワーク', 'パソコン訓練', 'ビジネスマナー', 'リフレッシュヨガ', '応募書類作成（履歴書・職務履歴書）／面接対策', '実務想定訓練'],
         job_hunt_support: ['就労定着支援'],
         main_skills: ['就労移行支援', '就労定着支援', '在宅支援相談'],
-        features: ['中郡電停 徒歩1分（補完）', '在宅支援の言及あり', '同法人で生活訓練/相談支援'],
+        features: ['中郡電停 徒歩1分（推定）', '在宅支援の言及あり', '同法人で生活訓練/相談支援'],
         is_client: false,
-        tier: 'Basic',
         meta: {
             description: '就労移行と就労定着を提供し、在宅支援の案内もある事業所です。',
             address: '鹿児島県鹿児島市郡元2丁目1-4',
@@ -82,13 +65,6 @@ export const offices: Office[] = [
             image_url: '/images/racine.jpg',
             phone: '099-813-8852',
             access_map_url: 'https://maps.app.goo.gl/SCwUX34qc5jqRtTj6'
-        },
-        matching: {
-            remoteSupport: 'available',
-            nearMajorStation: true,
-            supportStyle: 'hands_on',
-            programStrengths: ['office', 'practical', 'life_rhythm'],
-            paceFits: ['steady', 'standard']
         }
     },
     {
@@ -98,11 +74,10 @@ export const offices: Office[] = [
         area: 'ChuoStation',
         support_benefits: [],
         job_programs: ['パソコン訓練', 'ウォーキング', 'オフィスワークシミュレーション', 'グループワーク・グループディスカッション', 'ビジネスマナー', 'ベーシックトレーニング（軽作業）'],
-        job_hunt_support: ['就労定着支援', '復職支援（リワーク）'],
+        job_hunt_support: ['就労定着支援', '復職支援(リワーク)'],
         main_skills: ['就労移行支援', '就労定着支援', '復職支援（リワーク）'],
         features: ['鹿児島中央駅東口 徒歩8分', '利用定員16名', '曜日別利用時間を公開'],
         is_client: false,
-        tier: 'Platinum',
         meta: {
             description: '鹿児島中央駅徒歩圏。就労移行・定着に加え、復職支援（リワーク）にも対応する拠点です。',
             address: '鹿児島県鹿児島市上之園町4-6アルベラータ上之園 2階B号室',
@@ -112,13 +87,6 @@ export const offices: Office[] = [
             image_url: '/images/welbe.jpg',
             phone: '099-230-7601',
             access_map_url: 'https://maps.app.goo.gl/FsGQKRG4CLB6BBa3A'
-        },
-        matching: {
-            remoteSupport: 'none',
-            nearMajorStation: true,
-            supportStyle: 'balanced',
-            programStrengths: ['office', 'practical', 'life_rhythm'],
-            paceFits: ['standard', 'fast']
         }
     },
     {
@@ -129,7 +97,6 @@ export const offices: Office[] = [
         main_skills: ['就労移行支援', '就労定着支援', '就職活動支援'],
         features: ['鹿児島中央駅東口 徒歩6分', '利用定員16名', '曜日別利用時間を公開'],
         is_client: false,
-        tier: 'Platinum',
         meta: {
             description: '就労移行と就労定着を提供する鹿児島中央駅近くの拠点です。',
             address: '鹿児島県鹿児島市中央町4-34 メディカルミュゼビル中央駅4階',
@@ -138,13 +105,6 @@ export const offices: Office[] = [
             cta_link: 'https://www.welbe.co.jp/center/kagoshima/kagoshimachuo2.html',
             image_url: '/images/welbe2.jpg',
             phone: '099-296-9380'
-        },
-        matching: {
-            remoteSupport: 'none',
-            nearMajorStation: true,
-            supportStyle: 'balanced',
-            programStrengths: ['office', 'life_rhythm'],
-            paceFits: ['standard', 'fast']
         }
     },
     {
@@ -158,7 +118,6 @@ export const offices: Office[] = [
         main_skills: ['就労移行支援', '在宅訓練', 'eラーニング学習'],
         features: ['高見馬場駅 徒歩1分', '在宅/通所併用可を明記', '企業見学・実習の記載あり'],
         is_client: false,
-        tier: 'Platinum',
         meta: {
             description: '在宅と通所の併用を明記している就労移行支援事業所。eラーニング中心に学習できます。',
             address: '鹿児島県鹿児島市山之口町1-30 Idehara-BLD 8階',
@@ -168,13 +127,6 @@ export const offices: Office[] = [
             image_url: '/images/manaby.jpg',
             phone: '099-201-5231',
             access_map_url: 'https://maps.app.goo.gl/15PWchDZp5Ae3S8y9'
-        },
-        matching: {
-            remoteSupport: 'strong',
-            nearMajorStation: true,
-            supportStyle: 'self_paced',
-            programStrengths: ['it_web', 'office', 'practical'],
-            paceFits: ['steady', 'standard']
         }
     },
     {
@@ -188,7 +140,6 @@ export const offices: Office[] = [
         main_skills: ['就労移行支援', '自己理解プログラム', '軽作業訓練'],
         features: ['新屋敷電停 徒歩1分', '昼食提供の記載あり', '自己理解プログラムの記載あり'],
         is_client: false,
-        tier: 'Basic',
         meta: {
             description: '新屋敷電停近くの就労移行支援事業所。パンフで日課や昼食提供の案内があります。',
             address: '鹿児島県鹿児島市新屋敷町16番 公社ビル420号',
@@ -198,13 +149,6 @@ export const offices: Office[] = [
             image_url: '/images/hac.jpg',
             phone: '099-298-9689',
             access_map_url: 'https://maps.app.goo.gl/ZgDVn4Ab5BZLMhRn9'
-        },
-        matching: {
-            remoteSupport: 'none',
-            nearMajorStation: true,
-            supportStyle: 'balanced',
-            programStrengths: ['office', 'practical', 'life_rhythm'],
-            paceFits: ['steady', 'standard']
         }
     },
     {
@@ -215,7 +159,6 @@ export const offices: Office[] = [
         main_skills: ['就労選択支援', '就労移行支援', '就労定着支援'],
         features: ['新屋敷バス停 徒歩1分', '職場体験・実習中心', '個別支援計画を明記'],
         is_client: false,
-        tier: 'Basic',
         meta: {
             description: '選択→移行→定着まで一体で提供。実習中心で適職探索を進める支援スタイルです。',
             address: '鹿児島県鹿児島市新屋敷町16番401号・406号',
@@ -225,13 +168,6 @@ export const offices: Office[] = [
             image_url: '/images/academy.jpg',
             phone: '099-219-3456',
             access_map_url: 'https://maps.app.goo.gl/zFmVMF7SDqwZ26PA8'
-        },
-        matching: {
-            remoteSupport: 'none',
-            nearMajorStation: true,
-            supportStyle: 'hands_on',
-            programStrengths: ['practical', 'office'],
-            paceFits: ['standard', 'fast']
         }
     },
     {
@@ -240,9 +176,8 @@ export const offices: Office[] = [
         type: 'Transition',
         area: 'Tenmonkan',
         main_skills: ['就労移行支援', '就労定着支援', '就職準備'],
-        features: ['高見馬場駅 徒歩3分（補完）', 'バス停徒歩1分（補完）', '移行+定着の種別確認'],
+        features: ['高見馬場駅 徒歩3分（推定）', 'バス停徒歩1分（推定）', '移行+定着の種別確認'],
         is_client: false,
-        tier: 'Basic',
         meta: {
             description: '高見馬場近くの事業所。外部DBで就労移行・就労定着の種別情報が確認できます。',
             address: '鹿児島市西千石町17-28 NADESHIKOビル6F',
@@ -252,13 +187,6 @@ export const offices: Office[] = [
             image_url: '/images/clover.jpg',
             phone: '099-248-8771',
             access_map_url: 'https://maps.app.goo.gl/7w1wSE7G5U3og4dC9'
-        },
-        matching: {
-            remoteSupport: 'none',
-            nearMajorStation: true,
-            supportStyle: 'balanced',
-            programStrengths: ['office', 'life_rhythm'],
-            paceFits: ['steady', 'standard']
         }
     },
     {
@@ -267,9 +195,8 @@ export const offices: Office[] = [
         type: 'Transition',
         area: 'Other',
         main_skills: ['就労移行支援', '生活訓練', '就労継続B型'],
-        features: ['JR谷山駅 徒歩15分（補完）', '就労定着支援を含む多機能型', '定員情報を公開'],
+        features: ['JR谷山駅 徒歩10分（推定）', '就労定着支援を含む多機能型', '定員情報を公開'],
         is_client: false,
-        tier: 'Basic',
         meta: {
             description: '生活訓練・就労移行・B型・定着までを提供する多機能型事業所です。',
             address: '鹿児島県鹿児島市谷山中央2丁目657番4',
@@ -279,13 +206,6 @@ export const offices: Office[] = [
             image_url: '/images/with.jpg',
             phone: '099-299-0300',
             access_map_url: 'https://maps.app.goo.gl/hP9zJGm5jcySHeTT6'
-        },
-        matching: {
-            remoteSupport: 'none',
-            nearMajorStation: false,
-            supportStyle: 'hands_on',
-            programStrengths: ['life_rhythm', 'practical'],
-            paceFits: ['steady']
         }
     },
     {
@@ -296,7 +216,6 @@ export const offices: Office[] = [
         main_skills: ['就労移行支援', 'オンライン在宅サポート', '就職支援'],
         features: ['鹿児島中央駅東口 徒歩5分', '在宅PCレンタルの記載あり', '面接同行の記載あり'],
         is_client: false,
-        tier: 'Platinum',
         meta: {
             description: '通所と在宅オンラインを併用しやすい就労移行支援。面接同行やPC貸与などの記載があります。',
             address: '鹿児島県鹿児島市西田1丁目4−12 下釜ビル2階',
@@ -306,13 +225,6 @@ export const offices: Office[] = [
             image_url: '/images/tio-chuo.jpg',
             phone: '099-272-9777',
             access_map_url: 'https://maps.app.goo.gl/tLEkz8kYGkzpwRjY9'
-        },
-        matching: {
-            remoteSupport: 'strong',
-            nearMajorStation: true,
-            supportStyle: 'balanced',
-            programStrengths: ['office', 'it_web'],
-            paceFits: ['standard', 'fast']
         }
     },
     {
@@ -323,7 +235,6 @@ export const offices: Office[] = [
         main_skills: ['就労移行支援', 'オンライン在宅サポート', '軽作業訓練'],
         features: ['二中通駅 徒歩1分', '通所/在宅の日課を公開', '在宅PCレンタルの記載あり'],
         is_client: false,
-        tier: 'Platinum',
         meta: {
             description: '駅近で通いやすく、在宅オンライン支援も明記している就労移行支援事業所です。',
             address: '鹿児島県鹿児島市荒田1丁目16-3 YU FIRST BLDG. 5階',
@@ -332,13 +243,6 @@ export const offices: Office[] = [
             cta_link: 'https://fit2022.or.jp/access/kagoshima_nichudori/',
             image_url: '/images/tio-nichudori.jpg',
             phone: '099-272-9997'
-        },
-        matching: {
-            remoteSupport: 'strong',
-            nearMajorStation: true,
-            supportStyle: 'balanced',
-            programStrengths: ['practical', 'office'],
-            paceFits: ['standard', 'fast']
         }
     }
 ];

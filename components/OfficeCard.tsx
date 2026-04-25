@@ -97,7 +97,7 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank, reasons, m
                                 <div className="grid grid-cols-[112px_1fr] items-start gap-2">
                                     <p className="text-sm font-semibold text-brand-lime-strong pt-0.5">就職プログラム</p>
                                     <div className="flex flex-wrap gap-1">
-                                        {(office.job_programs?.length ? office.job_programs : ['未掲載']).map((item) => (
+                                        {(office.job_programs?.length ? office.job_programs : []).map((item) => (
                                             <span key={`program-${item}`} className="px-2.5 py-1 bg-white text-brand-muted rounded text-sm border border-black/10">
                                                 {item}
                                             </span>
@@ -107,7 +107,7 @@ export const OfficeCard: React.FC<OfficeCardProps> = ({ office, rank, reasons, m
                                 <div className="grid grid-cols-[112px_1fr] items-start gap-2">
                                     <p className="text-sm font-semibold text-brand-lime-strong pt-0.5">就活サポート</p>
                                     <div className="flex flex-wrap gap-1">
-                                        {(office.job_hunt_support?.length ? office.job_hunt_support : ['未掲載']).map((item) => (
+                                        {(office.job_hunt_support?.length ? office.job_hunt_support : []).map((item) => (
                                             <span key={`job-${item}`} className="px-2.5 py-1 bg-white text-brand-muted rounded text-sm border border-black/10">
                                                 {item}
                                             </span>

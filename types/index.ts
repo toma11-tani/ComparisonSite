@@ -1,6 +1,5 @@
 export type Area = 'Tenmonkan' | 'ChuoStation' | 'Other';
 export type OfficeType = 'Transition' | 'B_Type';
-export type Tier = 'Platinum' | 'Basic';
 export type DeliveryModePreference = 'commute' | 'hybrid' | 'remote';
 export type LocationPriority = 'station' | 'program' | 'balanced';
 export type SupportIntensity = 'hands_on' | 'balanced' | 'self_paced';
@@ -15,14 +14,6 @@ export interface QuizAnswers {
   timeline: TimelinePreference;
 }
 
-export interface OfficeMatchingProfile {
-  remoteSupport: 'none' | 'available' | 'strong';
-  nearMajorStation: boolean;
-  supportStyle: SupportIntensity;
-  programStrengths: ProgramFocus[];
-  paceFits: TimelinePreference[];
-}
-
 export interface Office {
   id: string;
   name: string;
@@ -31,10 +22,9 @@ export interface Office {
   support_benefits?: string[];
   job_programs?: string[];
   job_hunt_support?: string[];
-  main_skills: string[]; // 'Webデザイン', 'プログラミング' etc.
-  features: string[];    // '在宅OK', '送迎あり' etc.
-  is_client: boolean;    // リバーサル鹿児島フラグ
-  tier: Tier;
+  main_skills: string[];
+  features: string[];
+  is_client: boolean;
   meta: {
     description: string;
     address: string;
@@ -42,9 +32,8 @@ export interface Office {
     walking_minutes?: number;
     access_map_url?: string;
     cta_link: string;
-    image_url: string; // 仮の画像パス
+    image_url: string;
     opening_hours?: string;
     phone?: string;
   };
-  matching: OfficeMatchingProfile;
 }

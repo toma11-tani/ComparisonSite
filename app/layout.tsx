@@ -11,8 +11,35 @@ const notoSans = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://www.ribasarukagoshima-navi.com'),
     title: 'リバーサル鹿児島 | 鹿児島の就労移行支援案内サイト',
     description: 'リバーサル鹿児島が運営する、鹿児島の就労移行支援案内サイトです。5問診断で、自分に合う事業所の選び方や見学のポイントを整理できます。',
+    openGraph: {
+        type: 'website',
+        locale: 'ja_JP',
+        url: 'https://www.ribasarukagoshima-navi.com',
+        siteName: 'リバーサル鹿児島',
+        title: 'リバーサル鹿児島 | 鹿児島の就労移行支援案内サイト',
+        description: '5問診断で、鹿児島で自分に合う就労移行支援事業所の選び方を整理できます。',
+        images: [
+            {
+                url: '/assets/hero.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'リバーサル鹿児島',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'リバーサル鹿児島 | 鹿児島の就労移行支援案内サイト',
+        description: '5問診断で、鹿児島で自分に合う就労移行支援事業所の選び方を整理できます。',
+        images: ['/assets/hero.jpg'],
+    },
+    robots: {
+        index: true,
+        follow: true,
+    },
 };
 
 export default function RootLayout({
