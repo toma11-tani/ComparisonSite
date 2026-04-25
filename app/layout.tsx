@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import { Noto_Sans_JP } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
+
+const GA_MEASUREMENT_ID = 'G-6FT1VNY9DX';
 
 const notoSans = Noto_Sans_JP({
     subsets: ['latin'],
@@ -19,6 +22,20 @@ export default function RootLayout({
 }) {
     return (
         <html lang="ja">
+            <head>
+                <Script
+                    src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+                    strategy="afterInteractive"
+                />
+                <Script id="ga4-init" strategy="afterInteractive">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', '${GA_MEASUREMENT_ID}');
+                    `}
+                </Script>
+            </head>
             <body className={notoSans.className}>
                 {children}
 
