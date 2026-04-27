@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     metadataBase: new URL('https://www.ribasarukagoshima-navi.com'),
     title: 'リバーサル鹿児島 | 鹿児島の就労移行支援案内サイト',
     description: 'リバーサル鹿児島が運営する、鹿児島の就労移行支援案内サイトです。5問診断で、自分に合う事業所の選び方や見学のポイントを整理できます。',
+    alternates: {
+        canonical: '/',
+    },
     openGraph: {
         type: 'website',
         locale: 'ja_JP',

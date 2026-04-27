@@ -23,7 +23,10 @@ export function generateMetadata({ params }: Props): Metadata {
     }
     return {
         title: `${office.name} | リバーサル鹿児島`,
-        description: `${office.name}の基本情報や支援内容を掲載している、リバーサル鹿児島運営の案内ページです。`
+        description: `${office.name}の基本情報や支援内容を掲載している、リバーサル鹿児島運営の案内ページです。`,
+        alternates: {
+            canonical: `/offices/${office.id}`,
+        },
     };
 }
 
