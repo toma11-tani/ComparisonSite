@@ -221,7 +221,7 @@ export const offices: Office[] = [
             address: '鹿児島県鹿児島市西田1丁目4−12 下釜ビル2階',
             nearest_station: '高見橋駅',
             walking_minutes: 2,
-            cta_link: 'https://fit2022.or.jp/',
+            cta_link: 'https://tio-kagoshima.jp/',
             image_url: '/images/tio-chuo.jpg',
             phone: '099-272-9777',
             access_map_url: 'https://maps.app.goo.gl/tLEkz8kYGkzpwRjY9'
@@ -240,7 +240,7 @@ export const offices: Office[] = [
             address: '鹿児島県鹿児島市荒田1丁目16-3 YU FIRST BLDG. 5階',
             nearest_station: '二中通駅',
             walking_minutes: 1,
-            cta_link: 'https://fit2022.or.jp/access/kagoshima_nichudori/',
+            cta_link: 'https://tio-kagoshima.jp/',
             image_url: '/images/tio-nichudori.jpg',
             phone: '099-272-9997'
         }
